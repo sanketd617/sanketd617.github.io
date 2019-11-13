@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#theCanvas {
+    /*border: 1px solid green;*/
+}
+
+#actions {
+    position: fixed;
+    left: 0;
+    width: 100px;
+    border: 1px solid grey;
+    padding: 0.5rem;
+}
+
+#actions .colors {
+    width: 100%;
+    border: 1px solid lightgrey;
+    opacity: 0.5;
+    margin-bottom: 3rem;
+}
+
+#actions .colors .color {
+    width: 100%;
+    height: 50px;
+    border: 1px solid grey;
+}
+
+.color:nth-child(1) {
+    background: rgb(154, 134, 114);
+}
+
+.color:nth-child(2) {
+    background: rgb(0, 0, 0);
+}
+
+.color:nth-child(3) {
+    background: rgb(255, 255, 255);
+}
+
+.save {
+    width: calc(100% - 0.1rem);
+    margin-left: 0.05rem;
+    height: 50px;
+    border: 1px solid grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
